@@ -27,15 +27,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="753"
-     inkscape:window-height="480"
+     inkscape:window-width="866"
+     inkscape:window-height="880"
      id="namedview8"
      showgrid="false"
      inkscape:zoom="12.421053"
-     inkscape:cx="9.5"
-     inkscape:cy="9.5"
-     inkscape:window-x="569"
-     inkscape:window-y="106"
+     inkscape:cx="-5.1525425"
+     inkscape:cy="9.3389833"
+     inkscape:window-x="562"
+     inkscape:window-y="45"
      inkscape:window-maximized="0"
      inkscape:current-layer="g4113" />
   <metadata
@@ -59,7 +59,7 @@
       <path
          id="circle4507"
          d="m85.5 97.5a7.5 7.5 0 0 0 -7.5 7.5 7.5 7.5 0 0 0 7.5 7.5 7.5 7.5 0 0 0 7.5 -7.5 7.5 7.5 0 0 0 -7.5 -7.5zm-2.5 4.2227 0.38867 0.38867l2.111 2.11 2.111-2.11 0.389-0.39 0.777 0.78-0.388 0.39-2.112 2.11 2.112 2.11 0.388 0.39-0.777 0.78-0.389-0.39-2.111-2.11-2.111 2.11-0.389 0.39-0.777-0.78 0.388-0.39 2.112-2.11-2.112-2.11-0.388-0.39 0.777-0.78z"
-         style="color:#000000;fill:#b7b7b7;fill-opacity:1"
+         style="color:#000000;fill:#007294;fill-opacity:1"
          transform="translate(-76.5 938.36)" />
       <rect
          id="rect4539"

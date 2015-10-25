@@ -1,0 +1,106 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/****************************************************************/
+/*	Theme Ambiance dark Blue for thunderbird By Stefan Cizmar	*/
+/****************************************************************/
+
+
+/****************************************************/
+/*						Tabs						*/
+/****************************************************/
+
+.tab-background {
+
+  -moz-appearance: none !important;
+  -moz-margin-end: -1px!important;
+  -moz-margin-start: -1px!important;
+
+  color: #cdcdcd !important;
+
+  background: linear-gradient(#3d3d3d, #2d2d2d 40%, #1a1a1a) !important;
+  border-radius: 4px 4px 0 0 !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #1f1f1f !important;
+}
+
+.tab-background:-moz-lwtheme {
+    opacity: 1 !important;
+}
+
+.tab-background:hover{
+  background-image: none !important;
+  -moz-appearance: none !important;
+  -moz-margin-end: -1px!important;
+  -moz-margin-start: -1px!important;
+
+  color: #ffffff !important;
+
+  background: linear-gradient(to bottom, #00cfeb, #006471, #006471) !important;
+
+  border-radius: 4px 4px 0 0 !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #1f1f1f !important;
+    opacity: 1 !important;
+}
+
+
+.tab-background-start[selected=true]:-moz-locale-dir(ltr):not(:-moz-lwtheme)::before,
+.tab-background-end[selected=true]:-moz-locale-dir(rtl):not(:-moz-lwtheme)::before,
+.tab-background-end[selected=true]:-moz-locale-dir(ltr):not(:-moz-lwtheme)::before,
+.tab-background-start[selected=true]:-moz-locale-dir(rtl):not(:-moz-lwtheme)::before,
+.tab-background-start[selected=true]:-moz-locale-dir(ltr)::after,
+.tab-background-end[selected=true]:-moz-locale-dir(rtl)::after,
+.tab-background-end[selected=true]:-moz-locale-dir(ltr)::after,
+.tab-background-start[selected=true]:-moz-locale-dir(rtl)::after,
+.tab-background-middle[selected=true] {
+
+  -moz-appearance: none !important;
+
+  background-image: none !important;
+  background: linear-gradient(to bottom, #00cfeb, #006471, #006471) !important;
+  background-size: auto !important;
+
+  padding-top: 0px;
+  
+  border-radius: 4px 4px 0 0 !important;
+  border-width: 0px !important;
+  border-style: solid !important;
+  border-color: #1f1f1f !important;
+}
+
+tab([selected="true"]) {
+/*font-style: italic !important;*/
+}
+
+/* Replace the default close tab icon with a white one */
+
+.tab-close-button {
+    list-style-image: url("images/close.png") !important;
+
+}
+
+.tab-close-button:hover {
+    list-style-image: url("images/close_hov.png") !important;
+
+}
+
+
+/* Replace default appmenu icon with a white one */
+
+.button-appmenu {
+
+    list-style-image: url("images/app-menu.png") !important;
+
+-moz-image-region: auto !important;
+
+}
+
+/* Display a dark 1px border over the toolbar */
+.mail-toolbox, #contentTab0 {
+    border-top: 1px #232323 solid !important;
+}
+
+
+

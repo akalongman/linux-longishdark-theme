@@ -1,0 +1,962 @@
+/*************************** 	Add USER code BELOW this line 	**************************/
+
+/*************************** 	Add USER code ABOVE this line 	**************************/
+/***********		Dark themes for pages by Stefan Cizmar 2015		**********************/
+/***************	 Fixes Colour of Input/Entry Boxes within Web-Pages		**************/
+/*remove if you would like dark - gray input boxes in web-pages, or change to your liking*/
+
+/* black text on white background for all pages */
+input,select {
+    -moz-appearance: none !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+textarea {
+    -moz-appearance: none !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+a[class="file"],
+a[class="dir"],
+a[class="symlink"] {
+    color: #2EB8E6 !important;
+}
+
+a:visited[class="file"],
+a:visited[class="dir"],
+a:visited[class="symlink"] {
+    color: #FF6666 !important;
+}
+
+/********************************* THEME **************************************/
+
+/****************************** Page background *******************************/
+
+
+/* Background for blank tab and Firefox startup blank page before homepage loads...*/
+/* see userChrome.css for background before clicked link page loads */
+
+@-moz-document  url(about:blank) {
+html {
+
+  background-color: #333230 !important; 
+}}
+
+/* added dickvls just because */
+@-moz-document url-prefix(about:blank) {
+* { background-color: #333230; 
+}}
+
+/***************	google accounts	*****************/
+
+@-moz-document domain("accounts.google.com") {
+
+body {
+  background: black radial-gradient(at top, rgba(148, 149, 132, .6), rgba(148, 149, 132, .3), rgba(68, 68, 60, .1), transparent) !important;
+}
+
+a, h1, h2 {
+  color: #167AC6 !important; 
+}
+
+.footer,
+.footer ul li {
+  color: #ffffff !important;
+  background-color: #333230 !important; 
+}
+
+.card {
+  border-color: #167AC6  !important;
+}
+
+.signin-card input[type="email"], .signin-card input[type="password"], .signin-card input[type="text"], .signin-card input[type="submit"] {
+  border-color: #167AC6  !important;
+}
+
+p {
+  color: #ffffff !important;
+}
+/* end google accounts */
+}
+
+/*******************************	YouTube		********************************/
+
+@-moz-document domain("youtube.com") {
+
+/* backgrounds */
+body, #yt-masthead-container,
+#yt-picker-country-footer, 
+#yt-picker-language-footer, 
+#yt-picker-safetymode-footer {
+  background-color: #333230 !important; 
+}
+
+.channel-header .secondary-header-contents,
+.yt-card,
+.yt-ui-ellipsis,
+.individual-feed,
+#appbar-nav,
+#appbar-guide-menu,
+#footer-container {
+  background-color: #000000 !important; 
+}
+
+.guide-item.guide-item-selected  {
+  -moz-appearance:none !important;
+  background-color: #167AC6 !important;
+}
+
+.guide-item:hover  {
+  -moz-appearance:none !important;
+  background-color: #167AC6 !important;
+}
+
+/* colours of texts */
+/* white colour */
+.yt-card .yt-uix-tabs .yt-uix-button,
+.watch-card .yt-uix-tabs-tab,
+#watch7-sidebar .watch-sidebar-head,
+.comments .comment-footer-action,
+.video-list .video-list-item .stat,
+#watch-description,
+.comments .comment-text .comment-text-content,
+#upload-drag-drop-description,
+.upload-informational-footer,
+.upload-other-options-list .upload-option-text,
+#yt-masthead #logo-container span.content-region,
+#subscription-manager-container .empty-message,
+.yt-gb-shelf-hero-content .description,
+.c4-checklist-module .checklist-item-title-text,
+.secondary-header-contents .nav-text,
+.search-header .num-results strong,
+.search-header .num-results,
+.filter,
+#safety-form label,
+.yt-default ul,
+p.yt-notes,
+#footer-links-secondary a,
+#footer-links-primary a,
+.yt-lockup,
+.shelf-annotation,
+.branded-page-module-title a,
+.guide-item .guide-count,
+.guide-item .display-name {
+  color: #ffffff !important;
+}
+
+/* blue colour */
+.yt-card .yt-uix-button-expander,
+.video-list-item .title,
+#watch7-headline h1,
+.upload-help-link-list .help-item,
+#upload-button-text,
+.upload-footer-header,
+.upload-sidebar-header,
+li.guide-section h3 a,
+#subscription-manager-container .subscription-title, #subscription-manager-container .collection-title,
+.branded-page-related-channels h3 a, .branded-page-related-channels h3,
+.category-header .category-title,
+.pl-video-title-link,
+#pl-header .pl-header-title,
+.branded-page-module-title,
+.primary-header-contents .view-as-menu .view-as-menu-trigger,
+.channel-header .branded-page-header-title .branded-page-header-title-link,
+.filter-col-title,
+.filter:hover,
+.yt-picker-header h3.yt,
+#footer-links-secondary a:hover,
+#footer-links-primary a:hover,
+.branded-page-module-title a:hover {
+  color: #167AC6 !important;
+}
+
+/* colour of video thumbnails */
+.video-list-item .yt-uix-simple-thumb-wrap,
+.yt-lockup-thumbnail {
+  border: 1px solid #ffffff !important;
+}
+
+.video-list-item .yt-uix-simple-thumb-wrap:hover,
+.yt-lockup-thumbnail:hover {
+  border: 1px solid #167AC6 !important;
+}
+
+
+.yt-card .yt-uix-tabs .yt-uix-button:hover, .yt-card .yt-uix-tabs .yt-uix-button:active, .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-active, .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-toggled,
+/* buttons in appbar nav */
+a.yt-uix-button-epic-nav-item.partially-selected:hover,
+button.yt-uix-button-epic-nav-item:hover,
+button.yt-uix-button-epic-nav-item.selected,
+button.yt-uix-button-epic-nav-item.yt-uix-button-toggled,
+.epic-nav-item:hover,
+.epic-nav-item.selected,
+.epic-nav-item.yt-uix-button-toggled,
+.epic-nav-item-heading {
+  color: #ffffff !important;
+  border-color: #167AC6 !important;
+}
+
+a.yt-uix-button-epic-nav-item:hover,
+a.yt-uix-button-epic-nav-item.selected,
+a.yt-uix-button-epic-nav-item.yt-uix-button-toggled{
+  color: #ffffff !important;
+  border-color: #167AC6 !important;
+}
+
+a.yt-uix-button-epic-nav-item,
+a.yt-uix-button-epic-nav-item,
+a.yt-uix-button-epic-nav-item.yt-uix-button{
+  color: #ffffff !important;
+  border-color: #167AC6 !important;
+}
+
+.watch-card .yt-uix-tabs-selected {
+  color: #ffffff !important;
+  border-color: #167AC6 !important;
+  border-width: 3px !important;
+}
+
+.all-comments, .all-comments a {
+  color: #ffffff !important;
+  background-color: #000000 !important;
+}
+
+.comments .paginator {
+  color: #167AC6 !important;
+  background-image: none !important;
+  background-color: #000000 !important;
+}
+
+/* icons */
+#footer-logo .footer-logo-icon,
+#yt-masthead #logo-container .logo {
+  background:  url("images/yt/yt-logo.png") no-repeat !important; 
+  opacity: 1.0  !important;
+}
+
+/* change colour guide button */
+.show-guide .yt-uix-button-icon-appbar-guide  {
+  background:  url("images/yt/yt-appbar-active.png") no-repeat !important; 
+  opacity: 1.0  !important;
+}
+
+.show-guide #appbar-guide-button .yt-uix-button-arrow {
+border-top-color: #167AC6 !important;
+}
+
+/* opacity for god contrast */
+.comments .comment-item .mod-button:hover .default-state.sprite_like, 
+.comments .comment-item .mod-button:hover .default-state.sprite_dislike,
+.comments .comment-item .mod-button .default-state.sprite_like, 
+.comments .comment-item .mod-button .default-state.sprite_dislike {
+    opacity: 1.0  !important;
+}
+
+.yt-uix-button,
+.yt-uix-button-icon  {
+  opacity: 1.0  !important; 
+}
+
+#watch8-action-buttons .yt-uix-button, 
+#watch8-action-buttons .yt-uix-button:hover, 
+#action-panel-dismiss, 
+#action-panel-dismiss:hover {
+  color: #000000 !important;
+  background-color: #ffffff !important;
+}
+
+.comments .footer-button-bar{
+  border: 1px #ffffff !important;
+}
+
+.yt-uix-button-subscribe-branded {
+  background-color: #167AC6 !important;
+}
+
+/* change colour loading bar */
+#progress {
+    height: 5px !important;
+    background: #167AC6 !important;
+}
+
+/* end youtube section */
+}
+
+/******************************************************************************/
+/******************** Start Page url(about:home)	***************************/
+/******************************************************************************/
+
+/* background on home page */
+@-moz-document  url(about:home) {
+body {  
+
+  background: black radial-gradient(at top, rgba(148, 149, 132, .6), rgba(148, 149, 132, .3), rgba(68, 68, 60, .1), transparent);
+
+/* background: url("images/latice2.png") repeat, black radial-gradient(at top, rgba(148, 149, 132, .6), rgba(148, 149, 132, .3), rgba(68, 68, 60, .1), transparent); */
+ 
+}}
+
+@-moz-document  url(about:home) {
+div#snippets { color:#131313 !important;
+  text-shadow: 0px 1px rgba(255, 255, 255, 0.46923) !important;
+}}
+
+@-moz-document  url(about:home) {
+div#snippets a:link { color:#004065 !important;
+  text-shadow: 0px 1px rgba(255, 255, 255, 0.46923) !important;
+}}
+
+@-moz-document  url(about:home) {
+div#snippets a:hover { color:#000000 !important;
+  text-shadow: 0px 1px rgba(255, 255, 255, 0.46923) !important;
+}}
+
+@-moz-document  url(about:home) {
+div#launcher {
+
+  background: url("images/latice3.png") repeat;
+ 
+  /*background: #505050 !important;*/
+  border: 3px solid #747474! important;
+  box-shadow: inset 0px 2px 3px -1px rgba(0, 0, 0, 0.15), inset 0px -1px #525252 !important;
+  margin: 0px 0px 40px 0px !important;
+}}
+
+@-moz-document  url(about:home) {
+div#restorePreviousSessionSeparator
+{ 
+  border:2px solid red !important;
+  background: transparent !important;
+  box-shadow:  none !important;
+}}
+
+/* search edit */
+@-moz-document  url(about:home) {
+#searchText { 
+  color: #ffffff !important;
+
+  border: 1px solid #141414 !important;    
+  border-radius: 4px !important;
+  background: #3c3b37 !important;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2) inset,
+				0px 1px 0px rgba(0,0,0,0.08) inset,
+			  0px 1px 0px rgba(255,255,255,0.024) !important;
+  padding: 3px !important;
+
+  margin: 0px !important;
+  margin-bottom: 1px !important;
+  -moz-background-clip: padding; 
+ }}
+
+@-moz-document  url(about:home) {
+#searchText:focus { 
+  color: #ffffff !important;
+  border: 1px solid #009eb3 !important;    
+  background: #3c3b37 !important;
+
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2) inset,
+				0px 1px 0px rgba(0,0,0,0.08) inset,
+			  0px 1px 0px rgba(255,255,255,0.024) !important;
+  -moz-background-clip: padding; 
+}}
+
+/* search button*/
+@-moz-document  url(about:home) {
+#searchSubmit {
+  padding: 3px !important;
+ 
+  color: #ffffff !important;
+  border-radius: 4px !important;
+  border: 1px solid #141414 !important;
+  background-image: linear-gradient(#3d3d3d, #2d2d2d, #1a1a1a) !important; 
+  margin: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 1px !important;
+  -moz-background-clip: padding !important; 
+  text-shadow: 0px -1px rgba(0, 0, 0, 0.51153) !important;
+
+}}
+
+@-moz-document  url(about:home) {
+#searchSubmit:hover { 
+  color: #ffffff !important;
+  background: -moz-linear-gradient(to bottom, #00cfeb, #006471, #006471) !important;
+  border: 1px solid #141414 !important;    
+  text-shadow: 0px -1px rgba(0, 0, 0, 0.51153) !important;
+
+}}
+
+@-moz-document  url(about:home) {
+#searchSubmit:active,
+#searchSubmit:active:hover { 
+  color: #f8f8f8 !important; 
+  background-image: linear-gradient(#3d3d3d, #2d2d2d, #1a1a1a) !important; 				   
+  border: 1px solid #141414 !important;	 
+  text-shadow: 0px -1px rgba(0, 0, 0, 0.62353) !important;
+}}
+
+/* no display objects */
+@-moz-document  url(about:home) {
+#aboutMozilla,
+#searchIcon,
+
+#restorePreviousSessionSeparator,
+#searchLogoContainer,
+#snippetContainer {
+  display: none !important ;
+
+}}
+
+#brandLogo {
+  background-image: url("images/firefox_blue.png") !important;
+
+}
+
+#restorePreviousSession{
+  color:#00FF00 !important;
+}
+
+#restorePreviousSession:hover{
+  background:rgba(17,73,25,.7) !important;
+  box-shadow:0px 0px 10px rgba(17,73,25,1) !important;
+}
+
+.launchButton {
+  background-image: linear-gradient(#3d3d3d, #2d2d2d, #1a1a1a) !important; 				   
+  border: 1px solid #141414 !important;
+  border-radius: 4px !important;
+  color: #ffffff !important;
+  cursor: pointer;
+}
+
+.launchButton:hover {
+  background-image: linear-gradient(to bottom, #00cfeb, #006471, #006471) !important;
+  border: 1px solid #141414 !important;
+  color: #ffffff !important;
+  border-radius: 4px !important;
+
+}
+
+/******************************************************************************/
+/******************	 Add-ons Manager	about:addons  *************************/
+/******************************************************************************/
+
+#addons-page {
+  -moz-appearance: none !important;
+  background:  #7b7b7b !important;
+  background-image: -moz-linear-gradient(rgba(0,0,0,.0), rgba(0,0,0,0.12) 65%, rgba(0,0,0,0.3)) !important;
+  color: WindowText! important!
+  padding: 0px !important;
+}
+
+/* background Add-ons */
+#view-port-container {
+  /* Needed to allow the radius to clip the inner content, see bug 595656 */
+  -moz-appearance: none !important;
+  overflow: hidden !important;
+  background: #333230 !important;
+  width:500px !important;
+  height:500px !important;
+  color: #dbdbdb !important;
+  border: 0px solid !important;
+  border-radius: 0px !important;
+  border-left: 2px solid !important;
+  -moz-border-left-colors:    rgba(255, 255, 255, 0.04)  rgba(0, 0, 0, 0.3) !important;
+  margin: -18px !important;
+  margin-left: 0px !important;
+  margin-top: -2px !important;
+}
+
+/* categories (left side) */
+#categories {
+  -moz-appearance: none !important;
+  padding-top: 12px !important;
+  padding-bottom: 12px!important;
+
+  background: #333230 !important;
+  margin: -18px !important;
+  margin-right: 0px !important;
+  margin-top: 0px !important;
+}
+
+.category,
+#categories richlistitem {
+  -moz-appearance: none !important;
+  background: transparent !important;
+  min-height: 0px  !important;
+  padding: 10px 4px  !important;
+  -moz-box-align: center  !important;
+  overflow: hidden  !important;
+  margin: 0px !important;
+  border-radius: 0px !important;
+  border: 1px solid transparent !important;
+  }
+
+#categories richlistitem:hover{
+  color: #ffffff !important;
+}
+
+.category[selected],
+#categories richlistitem[selected="true"] {
+  background: -moz-linear-gradient(to bottom, #004d7a, #005f96) !important;				
+  border: 1px solid #525252 !important;
+  border-right: none !important;
+  color: #dbdbdb !important;
+  font-weight: bold !important;
+  box-shadow: 1px 1px 0px rgba(0,0,0,.06) inset, 0 -1px 0px rgba(0,0,0,.06) inset !important;					
+}
+
+#categories richlistitem{
+  color: #ffffff !important;
+}
+
+#categories richlistitem:hover{
+  background: -moz-linear-gradient(to bottom, #f89e00, #ba7600, #ba7600) !important;
+  color: #ffffff !important;
+}
+
+#categories richlistitem[selected="true"]:hover {
+  background: -moz-linear-gradient(to bottom, #f89e00, #ba7600, #ba7600) !important;
+  color: #ffffff !important;
+}
+
+/*this makes the selected addon to installs main page legable within dark theme*/
+#discover-browser {
+  background: #333230 !important;
+  text-shadow: none !important;
+}
+
+.loading {
+  list-style-image: url("images/loading.png")!important;
+  border-radius: 5px !important;
+  padding-left: 18px;
+  padding-right: 18px;
+  background: rgba(0,0,0,0.2) !important;
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.26),
+				0px 0px 1px rgba(255,255,255,0.016) inset !important;
+}
+
+#header-search {
+  -moz-appearance: none !important;
+  border-radius: 4px !important;
+  border: 1px solid rgb(0,0,0) !important;
+
+  background: #333230 !important;
+
+  padding: 1px !important;
+  margin: 0px !important;
+  margin-bottom: 1px !important;
+}
+
+#header-search[selected] {
+  -moz-appearance: none !important;
+  border-radius: 4px !important;
+  border: 1px solid #00cfeb !important;
+
+  background: #fff230 !important;
+
+  padding: 1px !important;
+  margin: 0px !important;
+  margin-bottom: 1px !important;
+}
+
+#header-search input {
+    -moz-appearance: none !important;
+    background: #333230 !important;
+    color: #ffffff !important;
+}
+
+#header-search textarea {
+    -moz-appearance: none !important;
+    background: #333230 !important;
+    color: #ffffff !important;
+}
+
+#addons-page > #header {
+-moz-appearance: none !important;
+position: relative!important;
+margin-top: -17px !important;
+margin-left: -18px !important;
+margin-right: -18px !important;
+margin-bottom:0px !important;
+  padding: 15px 11px 14px 19px!important;
+
+  background:  #333230 !important;
+  background-position: left top !important;
+  background-repeat: repeat !important;
+  border-bottom: 1px solid #525252 !important;
+  box-shadow: 0px 1px 0px rgba(255,255,255,0.07) inset,
+				inset 1px 0px 0px rgba(255,255,255, 0.04),
+				inset 0px -1px 0px rgba(0,0,0, 0.16),
+				inset -1px 0px 0px rgba(0,0,0, 0.38) !important;
+}
+
+.view-header {
+  background: #333230 !important;
+
+  border-top: 1px solid #434343 !important;
+  border-bottom: 1px solid #565656 !important;
+  box-shadow: 0px 1px 0px rgba(255,255,255,0.07) inset,
+				inset 1px 0px 0px rgba(255,255,255, 0.04),
+				inset 0px -1px 0px rgba(0,0,0, 0.16),
+				inset -1px 0px 0px rgba(0,0,0, 0.38) !important;
+  padding: 4px !important;
+  margin: 0px !important;
+  min-height: 31px !important;
+}
+
+#search-filter {
+  padding: 5px 20px !important;
+  font-size: 120% !important;
+  background: #9b9b9b !important;
+  overflow-x: hidden !important;
+  box-shadow: 0px 1px 0px rgba(255,255,255,0.07) inset,
+				inset 1px 0px 0px rgba(255,255,255, 0.04),
+				inset 0px -1px 0px rgba(0,0,0, 0.16),
+				inset -1px 0px 0px rgba(0,0,0, 0.38),
+				0px -1px 2px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.26) !important;
+}
+
+.addon {
+  color: #ffffff !important;
+  border:  0px solid !important;
+  border-top: 1px solid #434343 !important;
+  box-shadow: none !important;
+  background: #333230 !important;
+}
+
+.addon:first-of-type {
+  border-top: none !important;
+}
+
+.addon:hover {
+  background: -moz-linear-gradient(to bottom, #f89e00, #ba7600, #ba7600) !important;
+  box-shadow: 0px -1px 0px rgba(0,64,101, 0.4) inset, 0px 1px 0px rgba(0,64,101, 0.4) inset !important;
+}
+
+.addon[selected] {
+  background: -moz-linear-gradient(to bottom, #004d7a, #005f96) !important;				
+  color: #f8f8f8 !important;
+   box-shadow: 0px -1px 0px rgba(0,64,101, 0.9) inset, 0px 1px 0px rgba(0,64,101, 0.9) inset !important;
+}
+
+.addon[selected]:hover {
+  color: #ffffff !important;
+  background: -moz-linear-gradient(to bottom, #f89e00, #ba7600, #ba7600) !important;
+  box-shadow: 0px -1px 0px rgba(0,64,101, 0.9) inset,
+				0px 1px 0px rgba(0,64,101, 0.9) inset !important;
+}
+
+.addon-view[active="false"],
+.addon-view[active="false"]:hover {
+  background: url("images/stripe-3.png") #505050 !important;
+  background-size: 8px !important;
+  background-repeat: repeat !important;
+  box-shadow: none !important;
+}
+
+.addon-view[active="false"][selected],
+.addon-view[active="false"][selected]:hover {
+  background: url("images/stripe-3.png"), #006aa8 !important;
+  background-size: 8px !important;
+  background-repeat: repeat !important;
+}
+
+.addon .name-container{
+  color: #ffffff !important;
+}
+
+.addon:hover .name-container{
+  color: #ffffff !important;
+}
+
+.addon[selected] .name-container,
+.addon[selected="true"] .name-container{
+  color: #f8f8f8 !important;
+}
+
+.addon[selected="true"]:hover .name-container{
+  color: #ffffff !important;
+}
+
+.creator {
+  font-weight: lighter !important;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.42) !important;
+}
+
+.creator .text-link {
+  color: #ff6aa8 !important;
+}
+
+.addon-view[active="false"],
+.addon-view[active="false"]:hover {
+  color: #1a1a1a !important;
+}
+
+.addon-view[active="false"] .name-container,
+.addon-view[active="false"] .name-container:hover {
+  color: #1a1a1a !important;
+}
+
+.addon-view[active="false"][selected],
+.addon-view[active="false"][selected]:hover {
+  color: #1a1a1a !important;
+}
+
+.addon-view[active="false"][selected] .name-container {
+  color: #1a1a1a !important;
+}
+
+.addon-view[active="false"][selected]:hover .name-container {
+  color: #1a1a1a !important;
+}
+
+.warning,
+.pending,
+.error {
+  -moz-margin-start: 48px !important;
+  font-weight: bold !important;
+  -moz-box-align: center !important;
+}
+
+.addon-view .warning {
+  color: #E8AC27 !important;
+}
+
+.addon-view .error {
+  color: #ED3431 !important;
+}
+
+.addon-view .pending {
+  color:#F4E0C8 !important;
+}
+
+/* font colour before restart Firefox */
+.addon-view[pending="disable"] .pending,
+.addon-view[pending="uninstall"] .pending {
+  color: #ffffff !important;
+}
+
+/* button on top */
+.header-button {
+  -moz-appearance: none !important;
+  margin: 0px 5px !important;
+  min-width: 6.3em !important;
+  border-radius: 4px !important;    
+  padding: 0px !important; 
+  background-image: linear-gradient(#3d3d3d, #2d2d2d, #1a1a1a) !important;				   
+  border: 1px solid #1a1a1a !important;
+  box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1) !important;  
+}
+
+.header-button[disabled="true"] {
+  color: #545454 !important;
+  background-image: linear-gradient(#3d3d3d, #2d2d2d, #) !important;
+  background-size: 6px!important;
+  background-repeat: repeat !important;
+  }
+  
+.header-button:not([open="true"]):not([disabled="true"]):not(:active):hover {
+  background: -moz-linear-gradient(to bottom, #00cfeb, #006471, #006471) !important;
+  border: 1px solid #1a1a1a !important; 
+  color: #ffffff !important;
+  box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1) !important;  
+} 
+
+.header-button:not([open="true"]):not([disabled="true"]):hover:active,
+.header-button:not([open="true"]):not([disabled="true"]):active,
+.header-button[checked="true"]:not([disabled="true"]),
+.header-button[open="true"]:not([disabled="true"]) {
+  background: -moz-linear-gradient(to bottom, #00cfeb, #006471, #006471) !important;
+  border: 1px solid #1a1a1a !important;				
+  box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1) !important;  
+  color: #ffffff !important;
+}
+
+/* buttons in Add-ons in right side */
+.addon-control {
+  -moz-appearance: none !important;
+  margin: 0px 3px !important;
+  min-height: 24px !important;
+  border-radius: 4px!important;    
+  padding: 0px !important; 
+  background-image: linear-gradient(#3d3d3d, #2d2d2d, #1a1a1a) !important; 				   
+  border: 1px solid #1a1a1a !important;    
+  box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1) !important;
+}
+
+.addon-control:not(:active):hover { 
+  background: -moz-linear-gradient(to bottom, #00cfeb, #006471, #006471) !important;
+  border: 1px solid #1a1a1a !important;  
+  box-shadow:  inset 0px 1px #c4c4c4, 0px 1px rgba(255,255,255, 0.1) !important;
+}
+
+.addon[selected] > .addon-control:not(:active):hover { 
+  background:-moz-linear-gradient(to bottom, #0093ea, #006AA8 40%, #0067a3) !important;   
+  border: 1px solid #004065 !important;  
+  box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1) !important;
+}
+
+.addon-control:active:hover {
+  background: -moz-linear-gradient(to bottom, #004d7a, #005f96) !important;				
+  box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1) !important;
+  color: #fefefe !important;
+}
+
+.addon-control:focus, 
+.addon-control:active {
+  color: #f8f8f8 !important;
+  box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1) !important;
+}
+
+.addon-control:focus:hover {
+  color: #ffffff !important;
+  text-shadow: 0px 1px rgba(255, 255, 255, 0.46923) !important;
+  box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1)!important;
+}
+
+/******************************************************************************/
+/**********************		New Tab Window	   ********************************/
+/******************************************************************************/
+
+/*  background of cell */
+#newtab-scrollbox,
+#newtab-scrollbox[page-disabled="true"]
+{
+/* background page */
+  background-color: black !important;
+  background-attachment: fixed !important;
+  background: black radial-gradient(at top, rgba(148, 149, 132, .6), rgba(148, 149, 132, .3), rgba(68, 68, 60, .1), transparent);
+}
+
+.newtab-cell {
+  -moz-margin-end: 20px !important;
+  background-color: #525252 !important;
+  border: 4px solid #141414 !important;    
+  border-radius: 4px !important;
+}
+
+.newtab-cell:hover:not(:empty) {
+  border: 4px solid #009eb3 !important;    
+}
+
+.newtab-site:hover,
+.newtab-site[dragged] {
+						
+}
+
+.newtab-site[dragged] {
+
+}
+
+.newtab-title {
+  padding: 0px 0px !important;
+  background-image: linear-gradient(#3d3d3d, #2d2d2d, #1a1a1a) !important; 				   
+  border: 1px solid #141414 !important;
+  border-radius: 4px !important;    
+  color: #f8f8f8 !important;
+  line-height: 24px !important;
+}
+
+.newtab-title:hover {
+  padding: 0px 0px!important;
+  background: -moz-linear-gradient(to bottom, #00cfeb, #006471, #006471) !important;
+  border: 1px solid #141414 !important;
+  border-radius: 4px !important;    
+  color: #f8f8f8 !important;
+  line-height: 24px !important;
+}
+
+.newtab-control:hover {
+  width: 24px !important;
+  height: 24px !important;
+  padding: 1px 1px 1px !important;
+  border: 3px solid #141414 !important;
+  border-radius: 4px !important;    
+  background: none !important;
+}
+
+.newtab-control {
+  width: 24px !important;
+  height: 24px !important;
+  padding: 1px 1px 1px !important;
+  border: 3px solid #141414 !important;
+  border-radius: 4px !important;    
+  background: none !important;
+}
+
+.newtab-control-block {
+  background:  url("images/close_cell.png") !important;
+}
+
+.newtab-control-block:hover {
+  background:  url("images/close_cell_hov.png") !important;
+}
+
+.newtab-control-pin {
+  background:  url("images/pin_cell.png") !important;
+}
+
+.newtab-control-pin:hover {
+  background:  url("images/pin_cell_hov.png") !important;
+}
+
+/*	setting for new tab search-text 	*/
+#newtab-toggle {
+  width: 16px!important;
+  height: 16px!important;
+  padding: 0px !important;
+  border: 1px !important;
+}
+
+#newtab-toggle[page-disabled] {
+  background-position: -232px 0px !important;
+}
+
+#newtab-search-text { 
+  color: #ffffff !important;
+/* add margin */
+  margin: 1px !important;
+  border: 1px solid #141414 !important;    
+  border-radius: 4px !important;
+  background: #3c3b37 !important;
+ }
+
+#newtab-search-text:focus { 
+  color: #ffffff !important;
+  border: 1px solid #009eb3 !important;    
+  background: #3c3b37 !important;
+ }
+
+#newtab-search-submit { 
+  color: #ffffff !important;
+  border-radius: 4px !important;
+  border: 1px solid #141414 !important;
+  background-image: linear-gradient(#3d3d3d, #2d2d2d, #1a1a1a) !important; 				   
+ }
+
+#newtab-search-submit:hover { 
+  color: #ffffff !important;
+  background: -moz-linear-gradient(to bottom, #00cfeb, #006471, #006471) !important;
+  border: 1px solid #141414 !important;  
+ }
+
+#newtab-search-submit:active,
+#newtab-search-submit:active:hover {
+  color: #f8f8f8 !important; 
+  background-image: linear-gradient(#3d3d3d, #2d2d2d, #1a1a1a) !important; 				   
+  border: 1px solid #141414 !important;				
+ }
+
+#newtab-search-logo {
+  display: none !important ;
+}
+
+#newtab-intro-what,
+.newtab-sponsored,
+.newtab-title {
+  color: #ffffff;
+}
+

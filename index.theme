@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=LongmanishDark
-Comment=LongmanishDark, A Redesigned Modern & Flat, Ambiance Based Theme W/New Colors By LONGMAN (15.10)
+Name=LongishDark
+Comment=Dark version theme v.1.00. By LONGMAN (15.10)
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=LongmanishDark
-MetacityTheme=LongmanishDark
-IconTheme=Vibrancy-Full-Dark-Aqua
+GtkTheme=LongishDark
+MetacityTheme=LongishDark
+IconTheme=Fog
 CursorTheme=DMZ-White
 ButtonLayout=close,minimize,maximize:

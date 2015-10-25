@@ -3,9 +3,6 @@
 # ==============================================================================
 
 style "terminal_window" = "dark" {
-
-bg[NORMAL] = "#454545"
-
 }
 
 style "terminal_menubar"
@@ -16,10 +13,7 @@ style "terminal_menubar"
 
 style "terminal_notebook" = "dark"
 {
-
-bg[NORMAL] = "#454545"
-bg[ACTIVE] = "#515151"
-fg[ACTIVE] = mix (0.8, "#DFDFDF", "#3C3C3C")
+	fg[ACTIVE] = mix (0.8, "#dfdbd2", "#3c3b37")
 
 	engine "murrine" {
 	}
@@ -27,11 +21,11 @@ fg[ACTIVE] = mix (0.8, "#DFDFDF", "#3C3C3C")
 
 style "terminal_scrollbar" = "scrollbar"
 {
-	bg[NORMAL]        = shade(1.45, "#838383")
-	bg[PRELIGHT]      = shade(1.50, "#838383")
-	bg[ACTIVE]        = shade(1.45, "#838383")
+	bg[NORMAL]        = "#3c3b37"
+	bg[PRELIGHT]      = shade(1.08, "#3c3b37")
+	bg[ACTIVE]        = shade(0.94, "#3c3b37")
 	bg[SELECTED]      = shade(1.0, @selected_bg_color)
-	bg[INSENSITIVE]   = shade(1.45, "#838383")
+	bg[INSENSITIVE]   = "#3c3b37"
 
 	engine "murrine" {
 	}
@@ -40,9 +34,9 @@ style "terminal_scrollbar" = "scrollbar"
 style "terminal_screen"
 {
 	text[NORMAL] = "#ffffff"
-	base[NORMAL] = "#060606"
+	base[NORMAL] = "#300a24"
 
-	TerminalScreen::background-darkness = 0.97
+	TerminalScreen::background-darkness = 0.95
 }
 
 widget "*TerminalWindow*"                               style "terminal_window"

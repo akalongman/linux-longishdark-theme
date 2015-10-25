@@ -1,0 +1,10 @@
+Theme is created and tested on Firefox version 38.0 
+
+Install:
+
+- copy chrome folder chrome
+- paste to folder ~/.mozilla/firefox/xSomeNumbers.default'
+
+Uninstall:
+- remove all content from chrome folder ~/.mozilla/firefox/xSomeNumbers.default/chrome
+
