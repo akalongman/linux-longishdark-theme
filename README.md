@@ -1,2 +1,2 @@
-# linux-longmanishdark-theme
-Longmanish Dark Theme for Linux
+# linux-longishdark-theme
+LongishDark Theme for Linux
