@@ -2,10 +2,10 @@
 
 <metacity_theme>
 <info>
-  <name>Ambiance</name>
-  <author>Kenneth Wimer, James Schriver, Andrea Cimitan</author>
-  <copyright>Canonical Ltd.</copyright>
-  <date>June, 2011</date>
+  <name>LongishDark</name>
+  <author>Avtandil Kikabidze aka LONGMAN</author>
+  <copyright>Avtandil Kikabidze aka LONGMAN</copyright>
+  <date>September, 2015</date>
   <description>Metacity theme</description>
 </info>
 
@@ -227,7 +227,7 @@
 <draw_ops name="left_right_background_unfocused_pressed">
   <image filename="trough_unfocused_right.png" x="0" y="1" width="object_width" height="object_height"/>
 </draw_ops>
-  
+
 <!-- button trough right -->
 <draw_ops name="right_left_background_focused_normal">
   <image filename="trough_left.png" x="0" y="1" width="object_width" height="object_height"/>
@@ -389,7 +389,7 @@
   <button function="right_right_background" state="pressed" draw_ops="right_right_background_focused_pressed"/>
   <button function="menu" state="normal" draw_ops="menu_focused_normal"/>
   <button function="menu" state="prelight" draw_ops="menu_focused_prelight"/>
-  <button function="menu" state="pressed" draw_ops="menu_focused_normal"/> 
+  <button function="menu" state="pressed" draw_ops="menu_focused_normal"/>
   <button function="minimize" state="normal" draw_ops="minimize_focused_normal"/>
   <button function="minimize" state="prelight" draw_ops="minimize_focused_prelight"/>
   <button function="minimize" state="pressed" draw_ops="minimize_focused_pressed"/>
@@ -429,7 +429,7 @@
   <button function="right_right_background" state="pressed" draw_ops="right_right_background_unfocused_pressed"/>
   <button function="menu" state="normal" draw_ops="menu_unfocused_normal"/>
   <button function="menu" state="prelight" draw_ops="menu_unfocused_prelight"/>
-  <button function="menu" state="pressed" draw_ops="menu_unfocused_normal"/> 
+  <button function="menu" state="pressed" draw_ops="menu_unfocused_normal"/>
   <button function="minimize" state="normal" draw_ops="minimize_unfocused_normal"/>
   <button function="minimize" state="prelight" draw_ops="minimize_unfocused_prelight"/>
   <button function="minimize" state="pressed" draw_ops="minimize_unfocused_pressed"/>
@@ -540,4 +540,4 @@
 <window type="utility" style_set="utility"/>
 <window type="border" style_set="border"/>
 
-</metacity_theme> 
+</metacity_theme>

@@ -1,10 +1,6 @@
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 /************************ DO NOT remove the Above line  **********************/
 
-/********************* Ambiance dark Blue theme for Firefox*******************/
-/* 							by Stefan Cizmar 2015 							 */
-/*****************************************************************************/
-   
 /* Dark background before clicked link page loads....
     see userContent.css for blank tab and initial Firefox start-up blank
     before homepage loads */
@@ -70,7 +66,7 @@ toolbarbutton.bookmark-item[open="true"] {
   box-shadow: 0px 1px 0px rgba(255,255,255,0.01) inset,
 				inset 0px -1px 0pxpx rgba(0,0,0, 0.16) !important;
 
-  margin-bottom: -1px !important;			
+  margin-bottom: -1px !important;
 }
 
 /* Places toolbar *//* ::::: bookmark buttons ::::: */
@@ -133,7 +129,7 @@ window:not([chromehidden~="toolbar"]) #urlbar-container > .toolbarbutton-1:-moz-
 #back-button:not([disabled="true"]) > .toolbarbutton-icon {
   background-image: linear-gradient(#3d3d3d, #2d2d2d, #1a1a1a) !important;
   border-radius: 4px !important;
-  border: 1px solid #000000 !important;			
+  border: 1px solid #000000 !important;
   box-shadow: 0px 0px 0px 1px rgba(55, 55, 55, 0.15), 0px 1px 0px rgba(255, 255, 255, 0.15) !important;
 }
 
@@ -185,7 +181,7 @@ toolbar textbox[focused="true"] {
 .urlbar-textbox-container {
   color:#dddddd !important;
 }
-  
+
 .urlbar-textbox-container[focused="true"],
 .urlbar-textbox-container[focused="true"]:hover {
   color: #ffffff !important;
@@ -206,7 +202,7 @@ toolbar textbox[focused="true"] {
 
 vbox{
   /*background:#3c3b37 !important;*/
-} 
+}
 
 
 /*	 Status panel 	*/
@@ -219,7 +215,7 @@ vbox{
   text-shadow: none!important;
   background-color: #333230 !important;
   background-image: none!important;
- 
+
   color: #ffffff !important;
   font-weight: bold !important;
   font-size: 0.975em !important;
@@ -233,7 +229,7 @@ textbox,
   border: 1px solid #000000 !important;
   border-radius: 5px !important;
   color: #ffffff !important;
-  background:#3c3b37 !important;	
+  background:#3c3b37 !important;
 }
 
 tabpanels textbox,
@@ -243,7 +239,7 @@ tabpanels .numberbox-input-box {
   border: 1px solid #000000 !important;
   border-radius: 5px !important;
   color: #ffffff !important;
-  background:#3c3b37 !important;	  
+  background:#3c3b37 !important;
 }
 
 .spinnbuttons-box,
@@ -251,7 +247,7 @@ tabpanels .numberbox-input-box {
   -moz-appearance: none !important;
   background: #3c3b37 !important;
   color: #ffffff !important;
-  border: 1px solid #000000 !important;	  
+  border: 1px solid #000000 !important;
 }
 
 .spinnbuttons-box {
@@ -274,12 +270,12 @@ tabpanels .menulist-editable-box[focused="true"],
 tabpanels .numberbox-input-box[focused="true"] {
   -moz-appearance: none !important;
   border: 1px solid #009eb3 !important;
-			  
+
 }
 
 textbox[disabled="true"],
 .menulist-editable-box[disabled="true"] {
-  border: 1px solid #1a1a1a !important;	  
+  border: 1px solid #1a1a1a !important;
   color: #1a1a1a !important;
   background:  #3c3b37 !important;
 }
@@ -288,9 +284,9 @@ tabpanels textbox[disabled="true"],
 tabpanels .menulist-editable-box[disabled="true"],
 tabpanels .numberbox-input-box[disabled="true"] {
   -moz-appearance: none !important;
-  border: 1px solid #1a1a1a !important;	  
+  border: 1px solid #1a1a1a !important;
   color: #1a1a1a !important;
-  background:  #3c3b37 !important;	  
+  background:  #3c3b37 !important;
 }
 
 /***************************	spin buttons	******************************/
@@ -310,7 +306,7 @@ tabpanels .numberbox-input-box[disabled="true"] {
 }
 
 .spinbuttons-up[disabled="true"] {
-  border-color: solid #1a1a1a !important;	  
+  border-color: solid #1a1a1a !important;
   background-image: url("images/arrow-up-dis.gif") !important;
 }
 
@@ -329,7 +325,7 @@ tabpanels .numberbox-input-box[disabled="true"] {
 }
 
 .spinbuttons-down[disabled="true"] {
-  border-color: solid #1a1a1a !important;	  
+  border-color: solid #1a1a1a !important;
   background-image: url("images/arrow-down-dis.gif") !important;
 }
 
@@ -339,12 +335,12 @@ tree {
   color: #c3c3c3 !important;
   background-color: #333230 !important;
   }
-  
+
 tree[seltype="cell"] > treechildren::-moz-tree-cell-text,
 tree[seltype="text"] > treechildren::-moz-tree-cell-text,
 treechildren::-moz-tree-cell-text {
   color: #ffffff !important;
-}  
+}
 
 treechildren::-moz-tree-cell-text(hover) {
   color: #009eb3 !important;
@@ -365,7 +361,7 @@ treechildren::-moz-tree-cell-text(hover, selected, focus) {
 tree[seltype="cell"] > treechildren::-moz-tree-line,
 tree[seltype="text"] > treechildren::-moz-tree-line,
 treechildren::-moz-tree-line {
-  border: 1px dotted #454545 !important; 
+  border: 1px dotted #454545 !important;
 }
 
 tree[seltype="cell"] > treechildren::-moz-tree-line(active, selected, focus),
@@ -388,9 +384,9 @@ dialogheader {
 
 caption {
   color:  #ffffff !important;
-  text-shadow: 0px 1px 0px rgba(0,0,0,0.4) !important; 
-} 
-  
+  text-shadow: 0px 1px 0px rgba(0,0,0,0.4) !important;
+}
+
 notification {
   background:  #006aa8 !important;
 }
@@ -516,13 +512,13 @@ progressmeter,
   border: 1px solid #1f1f1f !important;
 
   height: 6px !important;
-  min-height: 6px !important;			
+  min-height: 6px !important;
 }
 
 #downloadsPanel progressmeter,
 #addon-progress-notification progressmeter {
 	height: 16px !important;
-	min-height: 16px !important;			
+	min-height: 16px !important;
 }
 
 .progress-bar,
@@ -536,20 +532,20 @@ progressmeter,
   border: 1px solid #1f1f1f !important;
 
   height: 6px !important;
-  min-height: 6px !important;			
+  min-height: 6px !important;
 }
 
 #downloadsPanel .progress-bar,
 #addon-progress-notification .progress-bar  {
 	height: 6px !important;
-	min-height: 6px !important;			
+	min-height: 6px !important;
 }
 
 /* custom arrow */
 #downloadsPanel .panel-arrow[side="top"],
-#downloadsPanel .panel-arrow[side="bottom"] { 
-  list-style-image: url("images/popup-arrow-up2.png") !important; 
-  position: relative; 
+#downloadsPanel .panel-arrow[side="bottom"] {
+  list-style-image: url("images/popup-arrow-up2.png") !important;
+  position: relative;
   margin-top: 0px !important;
 }
 
@@ -605,13 +601,13 @@ richlistitem[type="download"][selected="true"] .status {
   -moz-border-right-colors: none !important;
   -moz-border-bottom-colors: none !important;
   color: #ffffff !important;
-  border: 1px solid #141414 !important;    
+  border: 1px solid #141414 !important;
   border-width: 1px 1px 0px 1px !important;
   border-radius: 4px 4px 0px 0px !important;
   text-shadow: 0px 0px 4px rgba(255,255,255,.75) !important;
   padding: 0px 0px !important;
 
-  background: linear-gradient(#3d3d3d, #2d2d2d 40%, #1a1a1a) !important; 
+  background: linear-gradient(#3d3d3d, #2d2d2d 40%, #1a1a1a) !important;
   background-clip: padding-box !important;
 
 
@@ -624,12 +620,12 @@ richlistitem[type="download"][selected="true"] .status {
   -moz-border-right-colors: none !important;
   -moz-border-bottom-colors: none !important;
 
-  border: 1px solid #141414 !important;    
+  border: 1px solid #141414 !important;
   border-width: 1px 0px 0px 1px !important;
   border-radius: 4px 4px 0px 0px !important;
 
   text-shadow: 0px 0px 4px rgba(255,255,255,.75) !important;
-  background: linear-gradient(#3d3d3d, #2d2d2d 40%, #1a1a1a) !important; 
+  background: linear-gradient(#3d3d3d, #2d2d2d 40%, #1a1a1a) !important;
   background-clip: padding-box !important;
 }
 
@@ -654,7 +650,7 @@ richlistitem[type="download"][selected="true"] .status {
   background: -moz-linear-gradient(to bottom, #00cfeb, #006471, #006471) !important;
   border-color: #141414 !important;
   border: 1px solid #141414 !important;
-  border-width: 1px 1px 0px 1px !important;    
+  border-width: 1px 1px 0px 1px !important;
 }
 
 #TabsToolbar .tab-background {
@@ -678,7 +674,7 @@ richlistitem[type="download"][selected="true"] .status {
 }
 
 #TabsToolbar .tabs-newtab-button {
-  border-width: 1px 1px 0px 1px !important;    
+  border-width: 1px 1px 0px 1px !important;
   margin: 0px !important;
   width: auto !important;
   padding: 0px 5px !important;
@@ -697,13 +693,13 @@ richlistitem[type="download"][selected="true"] .status {
   -moz-border-right-colors: none !important;
   -moz-border-bottom-colors: none !important;
   color: #ffffff !important;
-  border: 1px solid #141414 !important;    
+  border: 1px solid #141414 !important;
   border-width: 1px 1px 0px 1px !important;
   border-radius: 4px 4px 0px 0px !important;
   text-shadow: 0px 0px 4px rgba(255,255,255,.75) !important;
   padding: 0px 0px !important;
 
-  background: linear-gradient(#ffffff, #2d2d2d 40%, #1a1a1a) !important; 
+  background: linear-gradient(#ffffff, #2d2d2d 40%, #1a1a1a) !important;
   background-clip: padding-box !important;
 
 
@@ -712,7 +708,7 @@ richlistitem[type="download"][selected="true"] .status {
 
 #main-window[privatebrowsingmode] #TabsToolbar .tabbrowser-tab[selected] {
   color: #ffffff !important;
-  background: linear-gradient(#f89e00, #2d2d2d 40%, #1a1a1a) !important; 
+  background: linear-gradient(#f89e00, #2d2d2d 40%, #1a1a1a) !important;
   background-clip: padding-box !important;
   border-color: #141414 !important;
 }
@@ -723,25 +719,25 @@ richlistitem[type="download"][selected="true"] .status {
   -moz-border-right-colors: none !important;
   -moz-border-bottom-colors: none !important;
 
-  border: 1px solid #141414 !important;    
+  border: 1px solid #141414 !important;
   border-width: 1px 0px 0px 1px !important;
   border-radius: 4px 4px 0px 0px !important;
 
   text-shadow: 0px 0px 4px rgba(255,255,255,.75) !important;
-  background: linear-gradient(#ffffff, #2d2d2d 40%, #1a1a1a) !important; 
+  background: linear-gradient(#ffffff, #2d2d2d 40%, #1a1a1a) !important;
   background-clip: padding-box !important;
 }
 
 #main-window[privatebrowsingmode] #TabsToolbar .tabs-newtab-button:hover,
 #main-window[privatebrowsingmode] #TabsToolbar .tabbrowser-tab:hover:not([selected]) {
-  background: linear-gradient(#f89e00, #2d2d2d 40%, #1a1a1a) !important; 
+  background: linear-gradient(#f89e00, #2d2d2d 40%, #1a1a1a) !important;
   border-color: #141414 !important;
   border: 1px solid #141414 !important;
-  border-width: 1px 1px 0px 1px !important;    
+  border-width: 1px 1px 0px 1px !important;
 }
 
 
- 
+
 
 /*****************************		 close button	**********************************/
 .tab-close-button {
@@ -761,12 +757,12 @@ richlistitem[type="download"][selected="true"] .status {
 /****************************	scrollbars		**********************************/
 
 /* hide scrollbuttons */
-.scrollbutton-up, 
+.scrollbutton-up,
 .scrollbutton-down {
   /*display: none !important;*/
 }
 
-.scrollbutton-up:hover, 
+.scrollbutton-up:hover,
 .scrollbutton-down:hover {
   background: -moz-linear-gradient(to bottom, #00cfeb, #006471, #006471) !important;
   border-radius: 4px 4px 0px 0px !important;
@@ -775,7 +771,7 @@ richlistitem[type="download"][selected="true"] .status {
   border-color: #1f1f1f !important;
 }
 
-.scrollbutton-up, 
+.scrollbutton-up,
 .scrollbutton-down {
 
   background: linear-gradient(#3d3d3d, #2d2d2d 40%, #1a1a1a) !important;
@@ -786,16 +782,16 @@ richlistitem[type="download"][selected="true"] .status {
 }
 
 /* private browsing */
-#main-window[privatebrowsingmode] .scrollbutton-up:hover, 
+#main-window[privatebrowsingmode] .scrollbutton-up:hover,
 #main-window[privatebrowsingmode] .scrollbutton-down:hover {
-  background: linear-gradient(#f89e00, #2d2d2d 40%, #1a1a1a) !important; 
+  background: linear-gradient(#f89e00, #2d2d2d 40%, #1a1a1a) !important;
   border-radius: 4px 4px 0px 0px !important;
   border-width: 1px !important;
   border-style: solid !important;
   border-color: #1f1f1f !important;
 }
 
-#main-window[privatebrowsingmode] .scrollbutton-up, 
+#main-window[privatebrowsingmode] .scrollbutton-up,
 #main-window[privatebrowsingmode] .scrollbutton-down {
 
   background: linear-gradient(#ffffff, #2d2d2d 40%, #1a1a1a) !important;
@@ -806,22 +802,22 @@ richlistitem[type="download"][selected="true"] .status {
 }
 
 .scrollbutton-up .toolbarbutton-icon {
-/*left*/   
+/*left*/
   list-style-image: url("images/arrowscroll-left.svg") !important;
 }
 
 .scrollbutton-down .toolbarbutton-icon {
-/*right*/   
+/*right*/
   list-style-image: url("images/arrowscroll-left.svg") !important;
 }
 
 .scrollbutton-up:hover .toolbarbutton-icon {
-/*left*/   
+/*left*/
   list-style-image: url("images/arrowscroll-left-hover.svg") !important;
 }
 
 .scrollbutton-down:hover .toolbarbutton-icon {
-/*right*/   
+/*right*/
   list-style-image: url("images/arrowscroll-left-hover.svg") !important;
 }
 
@@ -874,17 +870,17 @@ toolbarbutton[cui-areatype="menu-panel"] .toolbarbutton-icon,
 #PanelUI-fxa-status,
 #PanelUI-customize,
 #PanelUI-help,
-#PanelUI-quit { 
+#PanelUI-quit {
 /*display:none !important;*/
   color: #dddddd !important;
   border-color: #1f1f1f !important;
-  background: linear-gradient(#3d3d3d, #2d2d2d 40%, #1a1a1a) !important; 
+  background: linear-gradient(#3d3d3d, #2d2d2d 40%, #1a1a1a) !important;
 }
 
 #PanelUI-fxa-status:hover,
 #PanelUI-customize:hover,
 #PanelUI-help:hover,
-#PanelUI-quit:hover { 
+#PanelUI-quit:hover {
 
   color: #ffffff !important;
   border-color: #1f1f1f !important;
@@ -937,77 +933,77 @@ toolbarbutton[cui-areatype="menu-panel"] .toolbarbutton-icon,
 
 #PanelUI-help > .toolbarbutton-icon {
   list-style-image: url("images/panelUI/help.png") !important;
-   -moz-image-region: rect(0px, 17px, 17px, 0px) !important; 
+   -moz-image-region: rect(0px, 17px, 17px, 0px) !important;
 }
 
 #PanelUI-help:not([disabled]):hover > .toolbarbutton-icon{
-   -moz-image-region: rect(0px, 37px, 17px, 17px) !important; 
+   -moz-image-region: rect(0px, 37px, 17px, 17px) !important;
 }
 
 #PanelUI-quit > .toolbarbutton-icon {
   list-style-image: url("images/panelUI/quit.png") !important;
-   -moz-image-region: rect(0px, 17px, 17px, 0px); 
+   -moz-image-region: rect(0px, 17px, 17px, 0px);
 }
 
 #PanelUI-quit:not([disabled]):hover > .toolbarbutton-icon{
-   -moz-image-region: rect(0px, 34px, 17px, 17px); 
+   -moz-image-region: rect(0px, 34px, 17px, 17px);
 }
 
 #PanelUI-fxa-status > .toolbarbutton-icon {
   list-style-image: url("images/panelUI/synchronize.png") !important;
-   -moz-image-region: rect(0px, 17px, 17px, 0px); 
+   -moz-image-region: rect(0px, 17px, 17px, 0px);
 }
 
 #PanelUI-fxa-status:not([disabled]):hover > .toolbarbutton-icon{
-   -moz-image-region: rect(0px, 34px, 17px, 17px); 
+   -moz-image-region: rect(0px, 34px, 17px, 17px);
 }
 
 #PanelUI-customize > .toolbarbutton-icon {
   list-style-image: url("images/panelUI/customize.png") !important;
-   -moz-image-region: rect(0px, 17px, 17px, 0px); 
+   -moz-image-region: rect(0px, 17px, 17px, 0px);
 }
 
 #PanelUI-customize:not([disabled]):hover > .toolbarbutton-icon{
-   -moz-image-region: rect(0px, 34px, 17px, 17px); 
+   -moz-image-region: rect(0px, 34px, 17px, 17px);
 }
 
 /* next icons PanelUI */
 #PanelUI-contents #cut-button > .toolbarbutton-icon{
   list-style-image: url("images/panelUI/cut.png") !important;
-   -moz-image-region: rect(0px, 17px, 14px, 0px) !important; 
+   -moz-image-region: rect(0px, 17px, 14px, 0px) !important;
 }
 
 #PanelUI-contents:not([disabled]):hover #cut-button > .toolbarbutton-icon{
-   -moz-image-region: rect(0px, 34px, 14px, 17px) !important; 
+   -moz-image-region: rect(0px, 34px, 14px, 17px) !important;
 }
 
 #PanelUI-contents #copy-button > .toolbarbutton-icon{
   list-style-image: url("images/panelUI/copy.png") !important;
-   -moz-image-region: rect(0px, 17px, 14px, 0px) !important; 
+   -moz-image-region: rect(0px, 17px, 14px, 0px) !important;
 }
 
 #PanelUI-contents:not([disabled]):hover #copy-button > .toolbarbutton-icon{
-   -moz-image-region: rect(0px, 34px, 14px, 17px) !important; 
+   -moz-image-region: rect(0px, 34px, 14px, 17px) !important;
 }
 
 #PanelUI-contents #paste-button > .toolbarbutton-icon{
   list-style-image: url("images/panelUI/paste.png") !important;
-   -moz-image-region: rect(0px, 17px, 14px, 0px) !important; 
+   -moz-image-region: rect(0px, 17px, 14px, 0px) !important;
 }
 
 #PanelUI-contents:not([disabled]):hover #paste-button > .toolbarbutton-icon{
-   -moz-image-region: rect(0px, 34px, 14px, 17px) !important; 
+   -moz-image-region: rect(0px, 34px, 14px, 17px) !important;
 }
 
 /* next */
 #PanelUI-contents #zoom-out-button > .toolbarbutton-icon{
   list-style-image: url("images/panelUI/zoom.png") !important;
-   -moz-image-region: rect(0px, 17px, 14px, 0px) !important; 
+   -moz-image-region: rect(0px, 17px, 14px, 0px) !important;
 }
 
 #PanelUI-contents #zoom-in-button > .toolbarbutton-icon{
   list-style-image: url("images/panelUI/zoom.png") !important;
-   -moz-image-region: rect(0px, 34px, 14px, 17px) !important; 
+   -moz-image-region: rect(0px, 34px, 14px, 17px) !important;
 }
 
 #PanelUI-contents #new-window-button > .toolbarbutton-icon{
@@ -1111,9 +1107,9 @@ toolbarbutton[cui-areatype="menu-panel"] .toolbarbutton-icon,
 }
 
 #PanelUI-popup .panel-arrow[side="top"],
-#PanelUI-popup .panel-arrow[side="bottom"] { 
-  list-style-image: url("images/popup-arrow-up2.png") !important; 
-  position: relative; 
+#PanelUI-popup .panel-arrow[side="bottom"] {
+  list-style-image: url("images/popup-arrow-up2.png") !important;
+  position: relative;
   margin-top: 0px !important;
 }
 
@@ -1139,27 +1135,27 @@ toolbarbutton[cui-areatype="menu-panel"] .toolbarbutton-icon,
   -moz-box-ordinal-group:3 !important
 }
 
-#PanelUI-history > label.panel-subview-header { 
+#PanelUI-history > label.panel-subview-header {
 -moz-box-ordinal-group: 1 !important;
   font-weight: bold !important;
   color: #ffffff !important;
 }
 
-#PanelUI-history > #PanelUI-historyMore  { 
-  -moz-box-ordinal-group: 2 !important; 
+#PanelUI-history > #PanelUI-historyMore  {
+  -moz-box-ordinal-group: 2 !important;
 }
 
-#PanelUI-developer > label.panel-subview-header { 
+#PanelUI-developer > label.panel-subview-header {
   font-weight: bold !important;
   color: #ffffff !important;
 }
 
-#PanelUI-helpView > label.panel-subview-header { 
+#PanelUI-helpView > label.panel-subview-header {
   font-weight: bold !important;
   color: #ffffff !important;
 }
 
-#PanelUI-characterEncodingView > label.panel-subview-header { 
+#PanelUI-characterEncodingView > label.panel-subview-header {
   font-weight: bold !important;
   color: #ffffff !important;
 }
@@ -1181,7 +1177,7 @@ toolbarbutton[cui-areatype="menu-panel"] .toolbarbutton-icon,
   color: #ffffff !important;
 }
 
-/* change shortcut color */ 
+/* change shortcut color */
 .subviewbutton[shortcut]::after {
   color: #f89e00 !important;
 
@@ -1220,14 +1216,14 @@ border-top: solid .5px #777777 !important;
 }
 
 #BMB_bookmarksPopup .panel-arrow[side="top"],
-#BMB_bookmarksPopup .panel-arrow[side="bottom"] { 
-  list-style-image: url("images/popup-arrow-up2.png") !important; 
-  position: relative; 
+#BMB_bookmarksPopup .panel-arrow[side="bottom"] {
+  list-style-image: url("images/popup-arrow-up2.png") !important;
+  position: relative;
   margin-top: 0px !important;
 }
 
 #BMB_bookmarksPopup .panel-arrow[side="left"],
-#BMB_bookmarksPopup .panel-arrow[side="right"] { 
+#BMB_bookmarksPopup .panel-arrow[side="right"] {
 
 }
 
@@ -1241,9 +1237,9 @@ border-top: solid .5px #777777 !important;
 /***************** Identity popup ***********************************/
 
 #identity-popup .panel-arrow[side="top"],
-#identity-popup .panel-arrow[side="bottom"] { 
-  list-style-image: url("images/popup-arrow-up2.png") !important; 
-  position: relative; 
+#identity-popup .panel-arrow[side="bottom"] {
+  list-style-image: url("images/popup-arrow-up2.png") !important;
+  position: relative;
   margin-top: 0px !important;
 }
 
@@ -1291,30 +1287,30 @@ border-top: solid .5px #777777 !important;
   color: #ffffff !important;
   -moz-appearance: none !important;
   margin: 0px 0px !important;
-  border-radius: 4px !important;    
-  padding: 0px !important; 
-  background-image: linear-gradient(#3d3d3d, #2d2d2d, #1a1a1a) !important;				   
+  border-radius: 4px !important;
+  padding: 0px !important;
+  background-image: linear-gradient(#3d3d3d, #2d2d2d, #1a1a1a) !important;
   border: 1px solid #1a1a1a !important;
-  box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1) !important; 	
+  box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1) !important;
 }
 
 #identity-popup-more-info-button:hover {
   color: #ffffff !important;
   -moz-appearance: none !important;
   margin: 0px 0px !important;
-  border-radius: 4px !important;    
-  padding: 0px !important; 
+  border-radius: 4px !important;
+  padding: 0px !important;
   background-image: -moz-linear-gradient(to bottom, #00cfeb, #006471, #006471) !important;
   border: 1px solid #1a1a1a !important;
-  box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1) !important; 	
+  box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1) !important;
 }
 
 /***************	Add bookmark panel	*************************************/
 
 #editBookmarkPanel .panel-arrow[side="top"],
-#editBookmarkPanel .panel-arrow[side="bottom"] { 
-  list-style-image: url("images/popup-arrow-up2.png") !important; 
-  position: relative; 
+#editBookmarkPanel .panel-arrow[side="bottom"] {
+  list-style-image: url("images/popup-arrow-up2.png") !important;
+  position: relative;
   margin-top: 0px !important;
 }
 
@@ -1337,11 +1333,11 @@ border-top: solid .5px #777777 !important;
   color: #ffffff !important;
   -moz-appearance: none !important;
   margin: 0px 0px !important;
-  border-radius: 4px !important;    
-  padding: 0px !important; 
+  border-radius: 4px !important;
+  padding: 0px !important;
   background-image: linear-gradient(to bottom, #00cfeb, #006471, #006471) !important;
   border: 1px solid #1a1a1a !important;
-  box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1) !important; 
+  box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1) !important;
 }
 
 #editBookmarkPanelBottomButtons > button,
@@ -1349,11 +1345,11 @@ border-top: solid .5px #777777 !important;
   color: #ffffff !important;
   -moz-appearance: none !important;
   margin: 0px 0px !important;
-  border-radius: 4px !important;    
-  padding: 0px !important; 
-  background-image: linear-gradient(#3d3d3d, #2d2d2d, #1a1a1a) !important;				   
+  border-radius: 4px !important;
+  padding: 0px !important;
+  background-image: linear-gradient(#3d3d3d, #2d2d2d, #1a1a1a) !important;
   border: 1px solid #1a1a1a !important;
-  box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1) !important; 
+  box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1) !important;
 }
 
 /*************************	 Find tool bar 	*******************************/
@@ -1367,33 +1363,33 @@ display: -moz-box !important;
 .findbar-highlight[checked] > label {
   -moz-appearance: none !important;
   border: 1px solid #1a1a1a !important;
-  background: linear-gradient(to bottom, #00cfeb, #006471, #006471) !important; 
+  background: linear-gradient(to bottom, #00cfeb, #006471, #006471) !important;
   box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1) !important;
-  border-radius: 4px !important;    
+  border-radius: 4px !important;
 }
 
 .findbar-case-sensitive[checked] > label {
   -moz-appearance: none !important;
   border: 1px solid #1a1a1a !important;
-  background: linear-gradient(to bottom, #00cfeb, #006471, #006471) !important; 
+  background: linear-gradient(to bottom, #00cfeb, #006471, #006471) !important;
   box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1) !important;
-  border-radius: 4px !important;    
+  border-radius: 4px !important;
 }
 
 .findbar-highlight:hover > label {
   -moz-appearance: none !important;
   border: 1px solid #1a1a1a !important;
-  background: linear-gradient(to bottom, #00cfeb, #006471, #006471) !important; 
+  background: linear-gradient(to bottom, #00cfeb, #006471, #006471) !important;
   box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1) !important;
-  border-radius: 4px !important;    
+  border-radius: 4px !important;
 }
 
 .findbar-case-sensitive:hover > label {
   -moz-appearance: none !important;
   border: 1px solid #1a1a1a !important;
-  background: linear-gradient(to bottom, #00cfeb, #006471, #006471) !important; 
+  background: linear-gradient(to bottom, #00cfeb, #006471, #006471) !important;
   box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1) !important;
-  border-radius: 4px !important;    
+  border-radius: 4px !important;
 }
 
 .findbar-highlight > label {
@@ -1401,7 +1397,7 @@ display: -moz-box !important;
   border: 1px solid #1a1a1a !important;
   background: linear-gradient(#3d3d3d, #2d2d2d, #1a1a1a) !important;
   box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1) !important;
-  border-radius: 4px !important;    
+  border-radius: 4px !important;
 }
 
 .findbar-case-sensitive > label {
@@ -1409,37 +1405,37 @@ display: -moz-box !important;
   border: 1px solid #1a1a1a !important;
   background:  linear-gradient(#3d3d3d, #2d2d2d, #1a1a1a) !important;
   box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1) !important;
-  border-radius: 4px !important;    
+  border-radius: 4px !important;
 }
 
 .findbar-find-next,
 .findbar-find-previous {
-  width: 20px !important; 
+  width: 20px !important;
   color: #ffffff !important;
   -moz-appearance: none !important;
   margin: 2px 2px !important;
-  border-radius: 4px !important;    
-  padding: 5px !important; 
-  background: linear-gradient(#3d3d3d, #2d2d2d, #1a1a1a) !important;				   
+  border-radius: 4px !important;
+  padding: 5px !important;
+  background: linear-gradient(#3d3d3d, #2d2d2d, #1a1a1a) !important;
   border: 1px solid #1a1a1a !important;
   box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1) !important;
 }
 
 .findbar-find-next:hover,
 .findbar-find-previous:hover {
-  width: 20px !important; 
+  width: 20px !important;
   color: #ffffff !important;
   -moz-appearance: none !important;
   margin: 2px 2px !important;
-  border-radius: 4px !important;    
-  padding: 5px !important; 
+  border-radius: 4px !important;
+  padding: 5px !important;
   background: linear-gradient(to bottom, #00cfeb, #006471, #006471) !important;
   border: 1px solid #1a1a1a !important;
   box-shadow:inset 0px 1px #9a9a9a, 0px 1px rgba(255,255,255, 0.1) !important;
 }
 
 .browserContainer .findbar-textbox[status="notfound"] {
-  color: #ff0000 !important; 
+  color: #ff0000 !important;
 }
 
 .findbar-find-next > .toolbarbutton-icon {

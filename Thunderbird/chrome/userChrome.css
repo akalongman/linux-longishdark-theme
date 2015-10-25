@@ -1,10 +1,5 @@
 @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
 
-/****************************************************************/
-/*	Theme Ambiance dark Blue for thunderbird By Stefan Cizmar	*/
-/****************************************************************/
-
-
 /****************************************************/
 /*						Tabs						*/
 /****************************************************/
@@ -63,7 +58,7 @@
   background-size: auto !important;
 
   padding-top: 0px;
-  
+
   border-radius: 4px 4px 0 0 !important;
   border-width: 0px !important;
   border-style: solid !important;
