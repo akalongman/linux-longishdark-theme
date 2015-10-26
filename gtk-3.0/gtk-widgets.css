@@ -541,10 +541,15 @@ GtkAssistant .sidebar {
 }
 
 row:selected {
-    background-image: linear-gradient(to bottom,
+    /*background-image: linear-gradient(to bottom,
 	                    shade (@selected_bg_color, 1.25) ,
 						shade (@selected_bg_color, 0.9) ,
-	                    shade (@selected_bg_color, 0.7) );
+	                    shade (@selected_bg_color, 0.7) );*/
+    background-image: linear-gradient(to bottom,
+                        shade (@selected_bg_color, 0.9) ,
+                        shade (@selected_bg_color, 0.9) ,
+                        shade (@selected_bg_color, 0.9) );
+
     border-top-color: shade (@selected_bg_color, 0.88);
     border-bottom-color: alpha (@bg_color, 0.7);
     border-style: solid;
