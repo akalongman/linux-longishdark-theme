@@ -151,10 +151,18 @@ GtkAssistant .sidebar {
                        	to (shade (@bg_color, 0.2))) 5;*/
 	border-color:shade (@bg_color, 0.5);
 
+/*@default:     background-image: linear-gradient(to bottom,
+                        shade (@bg_color, 1.25) ,
+                        shade (@bg_color, 0.55) ,
+                        shade (@bg_color, 0.45) );*/
+
     background-image: linear-gradient(to bottom,
-			          	shade (@bg_color, 1.25) ,
-						shade (@bg_color, 0.55) ,
-			          	shade (@bg_color, 0.45) );
+			          	shade (@bg_color, 1.0) ,
+						shade (@bg_color, 1.0) ,
+			          	shade (@bg_color, 1.0) );
+
+
+
     color: @fg_color;
     text-shadow: 0px 1px alpha (shade (@button_bg_color, 1.25), 0.4);
 }
@@ -168,10 +176,16 @@ GtkAssistant .sidebar {
 
    	box-shadow: inset 0px 1px 1px shade (@bg_color, 1.9);
 
+    /*@default: background-image: linear-gradient(to bottom,
+                        shade (@selected_bg_color, 1.25) ,
+                        shade (@selected_bg_color, 0.55) ,
+                        shade (@selected_bg_color, 0.45) );*/
+
     background-image: linear-gradient(to bottom,
-			          	shade (@selected_bg_color, 1.25) ,
-						shade (@selected_bg_color, 0.55) ,
-			          	shade (@selected_bg_color, 0.45) );
+			          	shade (@selected_bg_color, 1.0) ,
+						shade (@selected_bg_color, 1.0) ,
+			          	shade (@selected_bg_color, 1.0) );
+
     color: @fg_color;
     text-shadow: 0px 1px alpha (shade (@button_bg_color, 1.25), 0.4);
 }
@@ -204,10 +218,14 @@ GtkAssistant .sidebar {
 	border-width: 1px;
 	border-color:shade (@bg_color, 0.5);
 
+    /*@default: background-image: linear-gradient(to bottom,
+                        shade (@selected_bg_color, 1.25) ,
+                        shade (@selected_bg_color, 0.55) ,
+                        shade (@selected_bg_color, 0.45) );*/
     background-image: linear-gradient(to bottom,
-			          	shade (@selected_bg_color, 1.25) ,
-						shade (@selected_bg_color, 0.55) ,
-			          	shade (@selected_bg_color, 0.45) );
+			          	shade (@selected_bg_color, 1.0) ,
+						shade (@selected_bg_color, 1.0) ,
+			          	shade (@selected_bg_color, 1.0) );
 }
 
 .button:hover:backdrop {
@@ -228,10 +246,16 @@ GtkAssistant .sidebar {
 }
 
 .button:active {
+    /*@default: background-image: linear-gradient(to bottom,
+                        shade (@selected_bg_color, 1.00) ,
+                        shade (@selected_bg_color, 0.4) ,
+                        shade (@selected_bg_color, 0.2) );*/
     background-image: linear-gradient(to bottom,
 			          	shade (@selected_bg_color, 1.00) ,
-						shade (@selected_bg_color, 0.4) ,
-			          	shade (@selected_bg_color, 0.2) );
+						shade (@selected_bg_color, 1.00) ,
+			          	shade (@selected_bg_color, 1.00) );
+
+
 }
 
 .button:active:backdrop{
@@ -240,10 +264,16 @@ GtkAssistant .sidebar {
 }
 
 .button:active:hover {
+/*@default:    background-image: linear-gradient(to bottom,
+                        shade (@selected_bg_color, 1.25) ,
+                        shade (@selected_bg_color, 0.55) ,
+                        shade (@selected_bg_color, 0.45) );*/
     background-image: linear-gradient(to bottom,
-			          	shade (@selected_bg_color, 1.25) ,
-						shade (@selected_bg_color, 0.55) ,
-			          	shade (@selected_bg_color, 0.45) );
+			          	shade (@selected_bg_color, 1.00) ,
+						shade (@selected_bg_color, 1.00) ,
+			          	shade (@selected_bg_color, 1.00) );
+
+
 }
 
 .button:active:focus {
@@ -541,14 +571,14 @@ GtkAssistant .sidebar {
 }
 
 row:selected {
-    /*background-image: linear-gradient(to bottom,
+    /*@default: background-image: linear-gradient(to bottom,
 	                    shade (@selected_bg_color, 1.25) ,
 						shade (@selected_bg_color, 0.9) ,
 	                    shade (@selected_bg_color, 0.7) );*/
     background-image: linear-gradient(to bottom,
-                        shade (@selected_bg_color, 0.9) ,
-                        shade (@selected_bg_color, 0.9) ,
-                        shade (@selected_bg_color, 0.9) );
+                        shade (@selected_bg_color, 1.0) ,
+                        shade (@selected_bg_color, 1.0) ,
+                        shade (@selected_bg_color, 1.0) );
 
     border-top-color: shade (@selected_bg_color, 0.88);
     border-bottom-color: alpha (@bg_color, 0.7);
@@ -615,10 +645,16 @@ column-header .button {
 column-header .button {
     border-radius: 0px;
 
+/*@default:    background-image: linear-gradient(to bottom,
+                        shade (@bg_color, 1.25) ,
+                        shade (@bg_color, 0.55) ,
+                        shade (@bg_color, 0.45) );*/
 	background-image: linear-gradient(to bottom,
-	                  	shade (@bg_color, 1.25) ,
-						shade (@bg_color, 0.55) ,
-	                 	shade (@bg_color, 0.45) );
+	                  	shade (@bg_color, 1.00) ,
+						shade (@bg_color, 1.00) ,
+	                 	shade (@bg_color, 1.00) );
+
+
     border-image: -gtk-gradient (linear, left top, left bottom,
                     	from (shade (@bg_color, 0.94)),
                        	to (shade (@bg_color, 0.88))) 1;
@@ -643,10 +679,18 @@ column-header .button:focus:hover,
 column-header .button:hover {
     border-radius: 0px;
 
+    /*@default: background-image: linear-gradient(to bottom,
+                        shade (@selected_bg_color, 1.25) ,
+                        shade (@selected_bg_color, 0.55) ,
+                        shade (@selected_bg_color, 0.45) );*/
+
     background-image: linear-gradient(to bottom,
-	                  	shade (@selected_bg_color, 1.25) ,
-						shade (@selected_bg_color, 0.55) ,
-	                   	shade (@selected_bg_color, 0.45) );
+	                  	shade (@selected_bg_color, 1.00) ,
+						shade (@selected_bg_color, 1.00) ,
+	                   	shade (@selected_bg_color, 1.00) );
+
+
+
     border-image: -gtk-gradient (linear, left top, left bottom,
                      	from (shade (@bg_color, 0.99)),
                         to (shade (@bg_color, 0.9))) 1;
@@ -656,10 +700,16 @@ column-header .button:hover {
 column-header .button:focus {
     border-radius: 0px;
 
+    /*@default: background-image: linear-gradient(to bottom,
+                        shade (@bg_color, 1.25) ,
+                        shade (@bg_color, 0.55) ,
+                        shade (@bg_color, 0.45) );*/
     background-image: linear-gradient(to bottom,
-	                  	shade (@bg_color, 1.25) ,
-						shade (@bg_color, 0.55) ,
-	                   	shade (@bg_color, 0.45) );
+	                  	shade (@bg_color, 1.00) ,
+						shade (@bg_color, 1.00) ,
+	                   	shade (@bg_color, 1.00) );
+
+
     border-image: -gtk-gradient (linear, left top, left bottom,
                      	from (shade (@bg_color, 0.99)),
                         to (shade (@bg_color, 0.9))) 1;
@@ -809,19 +859,31 @@ GtkComboBox.combobox-entry,
 
 GtkComboBox .button:hover{
     -GtkWidget-focus-line-width: 0px;
+/*@default:     background-image: linear-gradient(to bottom,
+                        shade (@selected_bg_color, 1.25) ,
+                        shade (@selected_bg_color, 0.55) ,
+                        shade (@selected_bg_color, 0.45) );*/
     background-image: linear-gradient(to bottom,
-						shade (@selected_bg_color, 1.25) ,
-						shade (@selected_bg_color, 0.55) ,
-						shade (@selected_bg_color, 0.45) );
+						shade (@selected_bg_color, 1.00) ,
+						shade (@selected_bg_color, 1.00) ,
+						shade (@selected_bg_color, 1.00) );
+
+
     color: @text_color;
 }
 
 GtkComboBox .button{
     -GtkWidget-focus-line-width: 0px;
+/*@default:     background-image: linear-gradient(to bottom,
+                        shade (@bg_color, 1.25) ,
+                        shade (@bg_color, 0.55) ,
+                        shade (@bg_color, 0.45) );*/
     background-image: linear-gradient(to bottom,
-			          	shade (@bg_color, 1.25) ,
-						shade (@bg_color, 0.55) ,
-			          	shade (@bg_color, 0.45) );
+			          	shade (@bg_color, 1.00) ,
+						shade (@bg_color, 1.00) ,
+			          	shade (@bg_color, 1.00) );
+
+
     color: @text_color;
 }
 
@@ -1099,10 +1161,17 @@ GtkComboBox .menu {
 }
 
 .menu:selected {
-     background-image: linear-gradient(to bottom,
-						shade (@selected_bg_color, 1.25) ,
-						shade (@selected_bg_color, 0.55) ,
-	                    shade (@selected_bg_color, 0.45) );
+/* @default:    background-image: linear-gradient(to bottom,
+                        shade (@selected_bg_color, 1.25) ,
+                        shade (@selected_bg_color, 0.55) ,
+                        shade (@selected_bg_color, 0.45) );*/
+
+      background-image: linear-gradient(to bottom,
+						shade (@selected_bg_color, 1.00) ,
+						shade (@selected_bg_color, 1.00) ,
+	                    shade (@selected_bg_color, 1.00) );
+
+
 
 }
 
@@ -1200,10 +1269,16 @@ GtkComboBox .menuitem *:hover {
 .menuitem:hover,
 .menu .menuitem:hover {
     border-radius: 0px;
+    /*@default: background-image: linear-gradient(to bottom,
+                        shade (@selected_bg_color, 1.25) ,
+                        shade (@selected_bg_color, 0.75) ,
+                        shade (@selected_bg_color, 0.65) );*/
     background-image: linear-gradient(to bottom,
-	                    shade (@selected_bg_color, 1.25) ,
-						shade (@selected_bg_color, 0.75) ,
-	                    shade (@selected_bg_color, 0.65) );
+	                    shade (@selected_bg_color, 1.00) ,
+						shade (@selected_bg_color, 1.00) ,
+	                    shade (@selected_bg_color, 1.00) );
+
+
     color: @selected_fg_color;
     text-shadow: 0px -1px shade (@selected_bg_color, 0.7);
 
@@ -1614,10 +1689,17 @@ GtkProgressBar {
 	border-style: solid;
 
 	color: @theme_fg_color;
+/*@default:    background-image: linear-gradient(to bottom,
+                        shade (@selected_bg_color, 1.25) ,
+                        shade (@selected_bg_color, 0.55) ,
+                        shade (@selected_bg_color, 0.45) );*/
    	background-image: linear-gradient(to bottom,
-	                  	shade (@selected_bg_color, 1.25) ,
-						shade (@selected_bg_color, 0.55) ,
-	                   	shade (@selected_bg_color, 0.45) );
+	                  	shade (@selected_bg_color, 1.00) ,
+						shade (@selected_bg_color, 1.00) ,
+	                   	shade (@selected_bg_color, 1.00) );
+
+
+
 	border-width: 1px;
 	border-style: solid;
 	border-color: shade(@bg_color, 0.6);
@@ -1635,10 +1717,16 @@ GtkProgressBar {
 	border-style: solid;
 
 	color: @theme_fg_color;
+/*@default:    background-image: linear-gradient(to bottom,
+                        shade (@selected_bg_color, 1.25) ,
+                        shade (@selected_bg_color, 0.55) ,
+                        shade (@selected_bg_color, 0.45) );*/
    	background-image: linear-gradient(to bottom,
-	                  	shade (@selected_bg_color, 1.25) ,
-						shade (@selected_bg_color, 0.55) ,
-	                   	shade (@selected_bg_color, 0.45) );
+	                  	shade (@selected_bg_color, 1.00) ,
+						shade (@selected_bg_color, 1.00) ,
+	                   	shade (@selected_bg_color, 1.00) );
+
+
 	border-width: 1px;
 	border-style: solid;
 	border-color: shade(@bg_color, 0.6);
@@ -1648,10 +1736,17 @@ GtkProgressBar.progressbar.vertical {
 	border-style: solid;
 
 	color: @theme_fg_color;
+/*@default:    background-image: linear-gradient(to right,
+                        shade (@selected_bg_color, 1.25) ,
+                        shade (@selected_bg_color, 0.55) ,
+                        shade (@selected_bg_color, 0.45) );*/
     background-image: linear-gradient(to right,
-	                  	shade (@selected_bg_color, 1.25) ,
-						shade (@selected_bg_color, 0.55) ,
-	                   	shade (@selected_bg_color, 0.45) );
+	                  	shade (@selected_bg_color, 1.00) ,
+						shade (@selected_bg_color, 1.00) ,
+	                   	shade (@selected_bg_color, 1.00) );
+
+
+
 	border-width: 1px;
 	border-style: solid;
 	border-color: shade(@bg_color, 0.6);
@@ -1734,6 +1829,8 @@ GtkLevelBar.vertical {
                       	shade(@selected_bg_color, 1.2),
                       	@selected_bg_color 75%,
                        	shade(@selected_bg_color, 0.8));
+
+
 }
 
 .level-bar.indicator-continuous.fill-block {
@@ -1833,38 +1930,60 @@ GtkLevelBar.vertical {
     border-width: 1px;
     border-style: solid;
     border-color: shade (@bg_color, 0.6);
+/*@default:    background-image: linear-gradient(to right,
+                        shade (@selected_bg_color, 1.25) ,
+                        shade (@selected_bg_color, 0.55) ,
+                        shade (@selected_bg_color, 0.45) );*/
     background-image: linear-gradient(to right,
-	                   	shade (@selected_bg_color, 1.25) ,
-						shade (@selected_bg_color, 0.55) ,
-	                    shade (@selected_bg_color, 0.45) );
+	                   	shade (@selected_bg_color, 1.00) ,
+						shade (@selected_bg_color, 1.00) ,
+	                    shade (@selected_bg_color, 1.00) );
 }
 
 .scrollbar.slider.horizontal,
 .scrollbar.button.horizontal {
+/*@default:   background-image: linear-gradient(to bottom,
+                        shade (@selected_bg_color, 1.25) ,
+                        shade (@selected_bg_color, 0.55) ,
+                        shade (@selected_bg_color, 0.45) );*/
     background-image: linear-gradient(to bottom,
-	                   	shade (@selected_bg_color, 1.25) ,
-						shade (@selected_bg_color, 0.55) ,
-	                    shade (@selected_bg_color, 0.45) );
+	                   	shade (@selected_bg_color, 1.00) ,
+						shade (@selected_bg_color, 1.00) ,
+	                    shade (@selected_bg_color, 1.00) );
+
+
 }
 
 .scrollbar.slider:hover{
     border-width: 1px;
     border-style: solid;
     border-color: shade (@bg_color, 0.6);
+/*@default:     background-image: linear-gradient(to right,
+                        shade (@selected_bg_color, 1.25) ,
+                        shade (@selected_bg_color, 0.75) ,
+                        shade (@selected_bg_color, 0.65) );*/
     background-image: linear-gradient(to right,
-	                  	shade (@selected_bg_color, 1.25) ,
-						shade (@selected_bg_color, 0.75) ,
-	                    shade (@selected_bg_color, 0.65) );
+	                  	shade (@selected_bg_color, 1.00) ,
+						shade (@selected_bg_color, 1.00) ,
+	                    shade (@selected_bg_color, 1.00) );
+
+
 }
 
 .scrollbar.slider.horizontal:hover{
     border-width: 1px;
     border-style: solid;
     border-color: shade (@bg_color, 0.6);
+/*@default:    background-image: linear-gradient(to bottom,
+                        shade (@selected_bg_color, 1.25) ,
+                        shade (@selected_bg_color, 0.75) ,
+                        shade (@selected_bg_color, 0.65) );*/
     background-image: linear-gradient(to bottom,
-	                   	shade (@selected_bg_color, 1.25) ,
-						shade (@selected_bg_color, 0.75) ,
-	                    shade (@selected_bg_color, 0.65) );
+	                   	shade (@selected_bg_color, 1.00) ,
+						shade (@selected_bg_color, 1.00) ,
+	                    shade (@selected_bg_color, 1.00) );
+
+
 }
 
 .scrollbar.slider:backdrop {
@@ -2382,10 +2501,16 @@ GtkTextView {
 .menubar.toolbar .raised.button,
 .header-bar .button,
 .header-bar .raised.button {
+/*@default:;    background-image: linear-gradient(to bottom,
+                        shade (@bg_color, 1.25) ,
+                        shade (@bg_color, 0.55) ,
+                        shade (@bg_color, 0.45) );*/
     background-image: linear-gradient(to bottom,
-					  	shade (@bg_color, 1.25) ,
-						shade (@bg_color, 0.55) ,
-					  	shade (@bg_color, 0.45) );
+					  	shade (@bg_color, 1.00) ,
+						shade (@bg_color, 1.00) ,
+					  	shade (@bg_color, 1.00) );
+
+
     border-width: 1px;
 }
 
@@ -2401,10 +2526,16 @@ GtkTextView {
 .primary-toolbar .button:active,
 .menubar.toolbar .button:active,
 .header-bar .button:active {
+/*@default    background-image: linear-gradient(to bottom,
+                        shade (@selected_bg_color, 1.25) ,
+                        shade (@selected_bg_color, 0.4) ,
+                        shade (@selected_bg_color, 0.2) );*/
     background-image: linear-gradient(to bottom,
-						shade (@selected_bg_color, 1.25) ,
-						shade (@selected_bg_color, 0.4) ,
-				   		shade (@selected_bg_color, 0.2) );
+						shade (@selected_bg_color, 1.00) ,
+						shade (@selected_bg_color, 1.00) ,
+				   		shade (@selected_bg_color, 1.00) );
+
+
     border-width: 1px;
     text-shadow: 0px -1px shade (@dark_bg_color, 0.6);
 }
@@ -2433,10 +2564,16 @@ GtkTextView {
 .primary-toolbar .button:active:hover,
 .menubar.toolbar .button:active:hover,
 .header-bar .button:active:hover {
+/*@default:    background-image: linear-gradient(to bottom,
+                        shade (@selected_bg_color, 1.25) ,
+                        shade (@selected_bg_color, 0.55) ,
+                        shade (@selected_bg_color, 0.45) );
+*/
     background-image: linear-gradient(to bottom,
-					  	shade (@selected_bg_color, 1.25) ,
-						shade (@selected_bg_color, 0.55) ,
-					  	shade (@selected_bg_color, 0.45) );
+					  	shade (@selected_bg_color, 1.00) ,
+						shade (@selected_bg_color, 1.00) ,
+					  	shade (@selected_bg_color, 1.00) );
+
 }
 
 .primary-toolbar .button:hover,
@@ -2446,10 +2583,18 @@ GtkTextView {
     border-style: solid;
 	border-width: 1px;
 	border-color:shade (@bg_color, 0.5);
+/*@default:    background-image: linear-gradient(to bottom,
+                        shade (@selected_bg_color, 1.25) ,
+                        shade (@selected_bg_color, 0.55) ,
+                        shade (@selected_bg_color, 0.45) );*/
+
     background-image: linear-gradient(to bottom,
-					  	shade (@selected_bg_color, 1.25) ,
-						shade (@selected_bg_color, 0.55) ,
-						shade (@selected_bg_color, 0.45) );
+					  	shade (@selected_bg_color, 1.00) ,
+						shade (@selected_bg_color, 1.00) ,
+						shade (@selected_bg_color, 1.00) );
+
+
+
 }
 
 .primary-toolbar .button:active:insensitive,
@@ -2683,10 +2828,18 @@ NemoPathbarButton {
 
    	box-shadow: inset 0px 1px 1px shade (@bg_color, 1.9);
 
+/*@default:    background-image: linear-gradient(to bottom,
+                        shade (@bg_color, 1.25) ,
+                        shade (@bg_color, 0.55) ,
+                        shade (@bg_color, 0.45) );*/
+
     background-image: linear-gradient(to bottom,
-			          	shade (@bg_color, 1.25) ,
-						shade (@bg_color, 0.55) ,
-			          	shade (@bg_color, 0.45) );
+			          	shade (@bg_color, 1.00) ,
+						shade (@bg_color, 1.00) ,
+			          	shade (@bg_color, 1.00) );
+
+
+
     color: @fg_color;
 }
 
@@ -2708,17 +2861,29 @@ NemoPathbarButton:backdrop {
 }
 
 .nemo-pathbar-button:active {
+/*@default:    background-image: linear-gradient(to bottom,
+                        shade (@selected_bg_color, 1.00) ,
+                        shade (@selected_bg_color, 0.4) ,
+                        shade (@selected_bg_color, 0.2) );*/
+
     background-image: linear-gradient(to bottom,
 			          	shade (@selected_bg_color, 1.00) ,
 						shade (@selected_bg_color, 0.4) ,
 			          	shade (@selected_bg_color, 0.2) );
+
 }
 
 .nemo-pathbar-button:hover {
+/*    background-image: linear-gradient(to bottom,
+                        shade (@selected_bg_color, 1.25) ,
+                        shade (@selected_bg_color, 0.55) ,
+                        shade (@selected_bg_color, 0.45) );*/
     background-image: linear-gradient(to bottom,
-			          	shade (@selected_bg_color, 1.25) ,
-						shade (@selected_bg_color, 0.55) ,
-			          	shade (@selected_bg_color, 0.45) );
+			          	shade (@selected_bg_color, 1.00) ,
+						shade (@selected_bg_color, 1.00) ,
+			          	shade (@selected_bg_color, 1.00) );
+
+
 
 }
 
