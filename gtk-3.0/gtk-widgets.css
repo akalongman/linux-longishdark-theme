@@ -2,7 +2,7 @@
 /* 		use 4 spaces intends, and keep code ALIGNED and ORDERED 	*/
 /*		Dark theme origin from Ambiance. 							*/
 /*		But greatly modified the code								*/
-/*		version 1.06												*/
+/*		version 1.00												*/
 
 /* default */
 * {
@@ -2432,7 +2432,7 @@ GtkTextView {
 					  	shade (@selected_bg_color, 1.25) ,
 						shade (@selected_bg_color, 0.55) ,
 					  	shade (@selected_bg_color, 0.45) );
-}	
+}
 
 .primary-toolbar .button:hover,
 .menubar.toolbar .button:hover,
