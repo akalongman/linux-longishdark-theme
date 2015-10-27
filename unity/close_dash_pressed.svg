@@ -15,7 +15,7 @@
    width="19"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="close_dash_pressed.svg">
+   sodipodi:docname="close_dash_disabled.svg">
   <defs
      id="defs10" />
   <sodipodi:namedview
@@ -27,17 +27,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1147"
+     inkscape:window-width="1104"
+     inkscape:window-height="844"
      id="namedview8"
      showgrid="false"
      inkscape:zoom="12.421053"
-     inkscape:cx="-18.114407"
-     inkscape:cy="9.3389833"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="g4123" />
+     inkscape:cx="-10.264831"
+     inkscape:cy="9.5000006"
+     inkscape:window-x="358"
+     inkscape:window-y="119"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g4113" />
   <metadata
      id="metadata4491">
     <rdf:RDF>
@@ -46,7 +46,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -54,16 +54,15 @@
      id="layer1"
      transform="translate(290.21 -522.86)">
     <g
-       id="g4123"
-       style="opacity:.6"
+       id="g4113"
        transform="translate(-289.71 -511)">
       <path
-         id="path4125"
+         id="circle4507"
          d="m85.5 97.5a7.5 7.5 0 0 0 -7.5 7.5 7.5 7.5 0 0 0 7.5 7.5 7.5 7.5 0 0 0 7.5 -7.5 7.5 7.5 0 0 0 -7.5 -7.5zm-2.5 4.2227 0.38867 0.38867l2.111 2.11 2.111-2.11 0.389-0.39 0.777 0.78-0.388 0.39-2.112 2.11 2.112 2.11 0.388 0.39-0.777 0.78-0.389-0.39-2.111-2.11-2.111 2.11-0.389 0.39-0.777-0.78 0.388-0.39 2.112-2.11-2.112-2.11-0.388-0.39 0.777-0.78z"
-         style="color:#000000;fill:#005a6a;fill-opacity:1"
+         style="color:#000000;fill:#c31b29;fill-opacity:1"
          transform="translate(-76.5 938.36)" />
       <rect
-         id="rect4127"
+         id="rect4539"
          style="color:#000000;fill:none"
          height="19"
          width="19"
